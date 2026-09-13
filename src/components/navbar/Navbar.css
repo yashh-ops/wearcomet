@@ -1,0 +1,301 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  width: 100%;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.navbar__inner {
+  width: 100%;
+  height: 84px;
+
+  padding: 0 50px;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+
+  width: 150px;
+
+  text-decoration: none;
+}
+
+.navbar__logo img {
+  display: block;
+
+  width: 145px;
+  height: auto;
+
+  object-fit: contain;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar__links {
+  margin-left: 620px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  gap: 52px;
+  height: 100%;
+}
+
+.navbar__item {
+  position: relative;
+
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+.navbar__link {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  height: 100%;
+
+  color: #111111;
+
+  font-family: "Poppins", "Segoe UI", sans-serif;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  user-select: none;
+}
+
+/* ACTIVE LINK */
+
+.navbar__item--active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+
+  bottom: 23px;
+
+  height: 3px;
+
+  background: #d7df3d;
+}
+
+/* =========================
+   CARET
+========================= */
+
+.navbar__caret {
+  width: 10px;
+  height: 7px;
+
+  margin-top: 2px;
+}
+
+/* =========================
+   DROPDOWN
+========================= */
+
+.navbar__dropdown {
+  position: absolute;
+
+  top: calc(100% - 1px);
+  left: 0;
+
+  min-width: 180px;
+
+  padding: 10px 0;
+
+  background: #ffffff;
+
+  border: 1px solid #eeeeee;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar__dropdown-item {
+  padding: 11px 20px;
+
+  color: #222222;
+
+  font-size: 14px;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+}
+
+.navbar__dropdown-item:hover {
+  background: #f5f5f5;
+}
+
+/* =========================
+   RIGHT ICONS
+========================= */
+
+.navbar__icons {
+  margin-left: auto;
+
+  display: flex;
+  align-items: center;
+
+  gap: 28px;
+}
+
+.navbar__icon-btn {
+  position: relative;
+
+  width: 30px;
+  height: 34px;
+
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background: transparent;
+
+  color: #111111;
+
+  cursor: pointer;
+}
+
+.navbar__icon-btn svg {
+  width: 27px;
+  height: 27px;
+
+  display: block;
+}
+
+/* =========================
+   CART
+========================= */
+
+.navbar__cart {
+  width: 43px;
+}
+
+.navbar__cart svg {
+  width: 39px;
+  height: 31px;
+}
+
+.navbar__cart-badge {
+  position: absolute;
+
+  top: -4px;
+  right: -1px;
+
+  width: 17px;
+  height: 17px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #111111;
+  color: #ffffff;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  line-height: 1;
+}
+
+/* =========================
+   HOVER
+========================= */
+
+.navbar__icon-btn:hover {
+  opacity: 0.65;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1100px) {
+  .navbar__inner {
+    padding: 0 30px;
+  }
+
+  .navbar__links {
+    gap: 30px;
+  }
+
+  .navbar__icons {
+    gap: 20px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+  .navbar__inner {
+    height: 70px;
+
+    padding: 0 20px;
+  }
+
+  .navbar__logo {
+    width: 110px;
+  }
+
+  .navbar__logo img {
+    width: 105px;
+  }
+
+  .navbar__links {
+    display: none;
+  }
+
+  .navbar__icons {
+    gap: 15px;
+  }
+
+  .navbar__icon-btn svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .navbar__cart svg {
+    width: 34px;
+    height: 28px;
+  }
+}

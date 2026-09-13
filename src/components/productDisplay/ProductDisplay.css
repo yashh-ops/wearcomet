@@ -1,0 +1,139 @@
+.product-display {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+}
+
+.product-card {
+  position: relative;
+  border-right: 1px solid #ececec;
+  padding: 0 0 24px;
+  cursor: pointer;
+  background: #fbfbfb;
+  min-width: 0;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-card:last-child {
+  border-right: none;
+}
+
+.product-card__badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+
+  padding: 6px 12px;
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.product-card__badge--dark {
+  background: #111111;
+}
+
+.product-card__badge--pink {
+  background: #b64d68;
+}
+
+/* =========================
+   PRODUCT IMAGE
+========================= */
+
+.product-card__image-wrap {
+  width: 100%;
+  height: 420px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+  background: #f4f4f4;
+}
+
+.product-card__image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+/* =========================
+   PRODUCT INFO
+========================= */
+
+.product-card__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding: 18px 20px 0;
+}
+
+.product-card__name {
+  font-size: 16px;
+  font-weight: 700;
+
+  margin: 0 0 2px;
+
+  letter-spacing: 0.3px;
+  color: #111111;
+}
+
+.product-card__subtitle {
+  font-size: 13px;
+  color: #8a8a8a;
+  margin: 0;
+}
+
+.product-card__price {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111111;
+  margin: 0;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .product-display {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-card__image-wrap {
+    height: 300px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+  .product-display {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card {
+    border-right: none;
+    border-bottom: 1px solid #ececec;
+  }
+
+  .product-card__image-wrap {
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+}
