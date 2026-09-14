@@ -1,0 +1,46 @@
+/* =========================================
+   VAULT PAGE
+========================================= */
+
+.vault {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+
+/* =========================================
+   VAULT SECTIONS
+========================================= */
+
+.vault__intro,
+.vault__drop {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* =========================================
+   VAULT IMAGES
+========================================= */
+
+.vault__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+  .vault__image {
+    width: 100%;
+    height: auto;
+  }
+}

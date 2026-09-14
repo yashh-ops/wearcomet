@@ -8,6 +8,7 @@ import PressSection from "./components/pressSection/PressSection";
 import ReviewsSection from "./components/reviewsSection/ReviewsSection";
 import Footer from "./components/footer/Footer";
 import ProductDetail from "./pages/productDetail/ProductDetail";
+import Vault from "./pages/vault/Vault";
 import "./App.css";
 
 const Home = () => (
@@ -26,10 +27,18 @@ function App() {
     <BrowserRouter>
       <div className="app">
         <Navbar />
+
         <Routes>
+          {/* HOME */}
           <Route path="/" element={<Home />} />
+
+          {/* PRODUCT DETAILS */}
           <Route path="/products/:id" element={<ProductDetail />} />
+
+          {/* THE VAULT */}
+          <Route path="/pages/vault" element={<Vault />} />
         </Routes>
+
         <Footer />
       </div>
     </BrowserRouter>
