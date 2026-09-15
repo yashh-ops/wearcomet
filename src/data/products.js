@@ -294,11 +294,13 @@ const products = [
         id: "armstrong",
         name: "Armstrong",
         swatch: "/images/products/armstrong-1.jpg",
+        swatch: "/images/products/armstrong-2.jpg",
       },
       {
         id: "madagascar",
         name: "Madagascar",
         swatch: "/images/products/madagascar-1.jpg",
+        swatch: "/images/products/madagascar-2.jpg",
       },
       {
         id: "cortado",
