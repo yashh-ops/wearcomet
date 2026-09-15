@@ -15,7 +15,7 @@ const testimonials = [
     image: "/images/reviews/customer-2.jpg",
     quote: "COMFORT I DIDN'T EXPECT",
     text: "Wore these on a full day of travel and they held up perfectly. Lightweight, breathable, and the sole doesn't feel flat after hours on your feet. Comet has quietly become my go-to brand for everyday sneakers.",
-    author: "AJAX",
+    author: "MIRAN",
   },
 ];
 
