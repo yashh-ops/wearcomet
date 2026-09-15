@@ -288,6 +288,7 @@ const products = [
         id: "chestnut",
         name: "Chestnut",
         swatch: "/images/products/chestnut-1.jpg",
+        swatch: "/images/products/chestnut-2.jpg",
       },
       {
         id: "armstrong",
