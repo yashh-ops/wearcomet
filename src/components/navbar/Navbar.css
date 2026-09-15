@@ -44,7 +44,9 @@
   object-fit: contain;
 }
 
-//Navigation related
+/* =========================
+   NAVIGATION
+========================= */
 
 .navbar__links {
   margin-left: 620px;
@@ -106,12 +108,20 @@
   background: #d7df3d;
 }
 
+/* =========================
+   CARET
+========================= */
+
 .navbar__caret {
   width: 10px;
   height: 7px;
 
   margin-top: 2px;
 }
+
+/* =========================
+   DROPDOWN
+========================= */
 
 .navbar__dropdown {
   position: absolute;
@@ -148,6 +158,10 @@
 .navbar__dropdown-item:hover {
   background: #f5f5f5;
 }
+
+/* =========================
+   RIGHT ICONS
+========================= */
 
 .navbar__icons {
   margin-left: auto;
